@@ -84,23 +84,23 @@ function clearFood(){
             //code to clear food from new order table
 }
 function takeOrder(foodList) {
-    var xhr = new XMLHttpRequest();
+    var req = new XMLHttpRequest();
     var url = '../private/request.php';
     var jsonData = JSON.stringify(foodList);
     console.log(jsonData);
 
-    xhr.open('POST', url, true);
-    xhr.setRequestHeader('Content-type', 'application/json');
+    req.open('POST', url, true);
+    req.setRequestHeader('Content-type', 'application/json');
 
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === xhr.DONE && xhr.status === 200) {
-            var response = xhr.responseText;
+    req.onreadystatechange = function() {
+        if (req.readyState === req.DONE && req.status === 200) {
+            var response = req.responseText;
             console.log(response + "##");
             document.getElementById("orderedList").innerHTML = response;
         }
     };
 
-    xhr.send('order=' + jsonData);
+    req.send('order=' + jsonData);
     foodList = [];
 }
 
