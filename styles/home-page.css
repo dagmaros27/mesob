@@ -1,0 +1,163 @@
+root{
+    font-size: 16px;
+}
+body{
+    background-size: 100vw auto;
+    margin: 0px;
+    background-color: rgba(21, 17, 42, 0);
+    color: rgba(232, 128, 10, 1);
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding: 0px;
+}
+.white{
+    color: white;
+}
+#header-container{
+    height: auto;
+    background-image: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.9)), url(../imgs/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#nav-bar{
+    font-size: 2rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+#nav-bar a:hover{
+    color:  rgb(242, 132, 7);
+}
+#logo-img{
+    width: 6rem;
+    height: 6rem;
+}
+
+#cafe-name{
+    font-size: 6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#first-nav, #more-nav{
+    padding-top: 12rem;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#more-nav>a{
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+}
+
+#sign-up-button{
+    height: 3rem;
+    width: 14rem;
+    background-color: rgba(232, 128, 10, 1);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+#sign-up-button:hover{
+    background-color: white;
+    color: rgba(232, 128, 10, 1);
+
+}
+#middle-container{
+    padding: 15rem;
+    margin-top: 10rem;
+    /* max-width: 1000px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#motto-1{
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+#motto{
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+#spinning-food{
+    width: 35rem; 
+    height: 35rem;
+    /* margin-bottom: 4rem; */
+    animation: imgRotate 50s linear infinite;
+} 
+
+@keyframes imgRotate {  
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+#temp{
+    width: 100%;
+    padding: 7rem;
+    display: flex;
+    justify-content: space-evenly
+}
+@media(min-width: 1600px) {
+    #cafe-name{
+        font-size: 15rem;
+    }
+    #logo-img{
+        width: 14rem;
+        height: 14rem;
+    }
+    #nav-bar{
+        padding: 6rem;
+    }
+    #more-nav > a{
+        padding: 1rem;
+    }
+    #more-nav{
+        font-size: 4rem;
+    }
+    #sign-up-button{
+        height: 6rem;
+        font-size: 4rem;
+        width: 24rem;
+    }
+    #motto{
+        font-size: 16rem;
+    }
+    #motto-1{
+        font-size: 15rem;
+    }
+ 
+    #spinning-food{
+        width: 45vw;
+        height: 45vw;
+    }
+}
+footer{
+    background-color: rgba(3, 3, 3, 0.9);
+    height: auto;
+    display: flex;    
+    flex-wrap: wrap;    
+    justify-content: space-around;
+}
+
+footer>div{
+    padding: 8rem;
+}
+
+
+
+
+
+
+
+
